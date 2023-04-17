@@ -1452,12 +1452,12 @@ setTimeout(() => {
     text: `Bot connected to: ${bot.botInfo.username}`,
   });
 }, 1000);
-setTimeout(() => {
+setTimeout(async () => {
   spinnies.add("spinner-2", { text: `Connecting To Server..` });
   app.listen(PORT, () => {
     spinnies.succeed("spinner-2", { text: `App Running On PORT: ${PORT}` });
   });
-  bot.telegram.getMe().then((getme) => {
+  await bot.telegram.getMe().then((getme) => {
     console.log(chalk.greenBright(" ================================"));
     console.log(chalk.greenBright(" │ + Owner    : RizzyFuzz"));
     console.log(chalk.greenBright(" │ + Bot Name : " + getme.first_name || ""));
@@ -1469,6 +1469,7 @@ setTimeout(() => {
     console.log(chalk.whiteBright("╭─── [ LOG ]"));
   });
 }, 1000);
+
 //! Clear tmp
 clearTmp();
 
@@ -1476,6 +1477,6 @@ process.on("uncaughtException", function (err) {
   console.error(err);
 });
 
-// Enable graceful stop
+//! Enable graceful stop
 process.once("SIGINT", () => bot.stop("SIGINT"));
 process.once("SIGTERM", () => bot.stop("SIGTERM"));
