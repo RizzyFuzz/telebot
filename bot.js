@@ -1401,8 +1401,8 @@ bot.on("message", async (rizz) => {
             chalk.greenBright("from"),
             chalk.whiteBright(user.username)
           );
-        } //simi simi
-    }*/
+        } //simi simi*/
+    }
   } catch (e) {
     console.log(
       chalk.whiteBright("├"),
