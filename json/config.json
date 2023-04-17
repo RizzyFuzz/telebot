@@ -1,0 +1,27 @@
+[
+  {
+    "pino": {
+      "safe": true,
+      "name": "platform",
+      "timestamp": true,
+      "prettyPrint": true,
+      "serializers": {
+        "req": "pino.stdSerializers.req",
+        "res": "pino.stdSerializers.res"
+      }
+    },
+    "ownerusername": "rizzlogy",
+    "unicode": {
+      "head": "✦",
+      "arrow": "✧",
+      "body": "┃",
+      "upper": "┏",
+      "down": "┗",
+      "line": "━",
+      "wings": ["𓆩 ", " 𓆪"],
+      "needed": ["<", ">"],
+      "optional": ["(", ")"]
+    },
+    "BotToken": "6063743568:AAHHAhtO6u5aKPdfGAirg1syJZwf263dXvQ"
+  }
+]
