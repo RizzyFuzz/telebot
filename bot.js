@@ -1336,8 +1336,8 @@ bot.on("message", async (rizz) => {
         reply("Sukses Menghidupkan Simsimi");
         break;
       default:
-        if (!isGroup && !isCmd && !isMedia) {
-       /*  if (simi.includes(sender)) return;
+        /* if (!isGroup && !isCmd && !isMedia) {
+        if (simi.includes(sender)) return;
           await rizz.replyWithChatAction("typing");
           anu = await toJson(`https://api.simsimi.net/v2/?text=${q}&lc=id`);
           if (anu.error) return;
@@ -1401,7 +1401,7 @@ bot.on("message", async (rizz) => {
             chalk.greenBright("from"),
             chalk.whiteBright(user.username)
           );
-        } //simi simi*/
+        } */
     }
   } catch (e) {
     console.log(
