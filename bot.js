@@ -1337,7 +1337,7 @@ bot.on("message", async (rizz) => {
         break;
       default:
         if (!isGroup && !isCmd && !isMedia) {
-          if (simi.includes(sender)) return;
+       /*  if (simi.includes(sender)) return;
           await rizz.replyWithChatAction("typing");
           anu = await toJson(`https://api.simsimi.net/v2/?text=${q}&lc=id`);
           if (anu.error) return;
@@ -1402,7 +1402,7 @@ bot.on("message", async (rizz) => {
             chalk.whiteBright(user.username)
           );
         } //simi simi
-    }
+    }*/
   } catch (e) {
     console.log(
       chalk.whiteBright("├"),
@@ -1443,6 +1443,15 @@ app.all("/", async (req, res) => {
         "Failed to Connect to Telegram API, Please Check Your Bot Token!",
     });
   }
+});
+
+//! Fallback Middleware
+app.all("*", async (req, res) => {
+  res.status(404).json({
+    status: 404,
+    creator: "RizzyFuzz",
+    error: "Page you are looking for is not found",
+  });
 });
 
 console.log(banner.string);
