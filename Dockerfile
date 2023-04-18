@@ -34,8 +34,8 @@ RUN apt-get -y update && \
     autoconf \
     m4 \
     build-essential && \
-    git clone https://github.com/MatrixTM/ddos.git && \
-    cd ddos && \
+    git clone https://github.com/MatrixTM/MHDDoS.git && \
+    cd MHDDoS && \
     pip3 install -r requirements.txt
 
 RUN neofetch
