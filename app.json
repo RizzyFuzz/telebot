@@ -1,0 +1,11 @@
+{
+  "name": "r-bot",
+  "description": "Bot Telegram Tapi Ribet",
+  "logo": "https://github.com/rizzyfuzz.png",
+  "stack": "container",
+  "build": {
+    "docker": {
+      "web": "Dockerfile"
+    }
+  }
+}
