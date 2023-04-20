@@ -7,6 +7,7 @@ RUN apt-get update && \
     neofetch \
     wget \
     curl \ 
+    sudo \
     git \
     chronium \
     ffmpeg \
