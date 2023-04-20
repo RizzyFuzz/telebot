@@ -7,7 +7,8 @@ RUN apt-get update && \
     neofetch \
     wget \
     curl \ 
-    git \ 
+    git \
+    chronium \
     ffmpeg \
     speedtest-cli
 
