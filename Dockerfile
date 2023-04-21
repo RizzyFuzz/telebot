@@ -9,7 +9,7 @@ RUN apt-get update && \
     curl \ 
     sudo \
     git \
-    chromium \
+    chromium-browser \
     ffmpeg \
     speedtest-cli
 
